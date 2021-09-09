@@ -10,20 +10,24 @@ package InterfacesTareaOcho;
             this.edad = edad;
         }
         public boolean igualQue(Object q) {
-
-            return false;
+            Alumno a = (Alumno) q;
+            return this.edad == a.edad;
         }
         public boolean menorQue(Object q) {
-            return false;
+            Alumno a = (Alumno) q;
+            return this.edad < a.edad;
         }
         public boolean menorIgualQue(Object q) {
-            return false;
+            Alumno a = (Alumno) q;
+            return this.edad <= a.edad;
         }
         public boolean mayorQue(Object q) {
-            return false;
+            Alumno a = (Alumno) q;
+            return this.edad > a.edad;
         }
         public boolean mayorIgualQue(Object q) {
-            return false;
+            Alumno a = (Alumno) q;
+            return this.edad >= a.edad;
         }
     }
 

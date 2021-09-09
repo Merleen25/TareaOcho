@@ -11,28 +11,26 @@ public class Producto implements Comparador {
         this.precio = precio;
     }
 
-    @Override
     public boolean igualQue(Object q) {
-        return false;
+        Producto a = (Producto) q;
+        return this.precio == a.precio;
     }
 
-    @Override
     public boolean menorQue(Object q) {
-        return false;
+        Producto a = (Producto) q;
+        return this.precio < a.precio;
     }
-
-    @Override
     public boolean menorIgualQue(Object q) {
-        return false;
+        Producto a = (Producto) q;
+        return this.precio <= a.precio;
     }
-
-    @Override
     public boolean mayorQue(Object q) {
-        return false;
+        Producto a = (Producto) q;
+        return this.precio > a.precio;
     }
 
-    @Override
     public boolean mayorIgualQue(Object q) {
-        return false;
+        Producto a = (Producto) q;
+        return this.precio >= a.precio;
     }
-    }
+}
